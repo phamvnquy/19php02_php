@@ -2,9 +2,7 @@
 require_once 'connect.php';
 if (isset($_POST['edit'])) {
 			$name = $_POST['name'];
-			$gender = isset($_POST['gender'])?$_POST['gender']:'';
 			$address = $_POST['address'];
-			$customer_type = $_POST['customer_type'];
 			$start_date = $_POST['start_date'];
 			$end_date = $_POST['end_date'];
 			$start_number = $_POST['start_number'];
@@ -23,38 +21,13 @@ if (isset($_POST['edit'])) {
 	$listUser = mysqli_query($connect, $sql1);
 	$dong=mysqli_fetch_array($listUser, MYSQLI_ASSOC);
 	?>
-<h1>Form</h1>
+<h1>Edit</h1>
 	<form action="#" method="post">
 		<p>Name
 			<input type="text" name="name" value="<?php echo $dong['name']?>">
 		</p>
-		
-		<p>Gender
-			<input type="radio" name="gender" value="<?php echo $dong['gender']?>"
-			
-			> Male
-			<input type="radio" name="gender" value="<?php echo $dong['gender']?>"
-		
-			>Female
-		</p>
-
 		<p>Address
 			<input type="text" name="address" value="<?php echo $dong['address']?>">
-		</p>
-
-		<p>Customer type
-			<select name="customer_type">
-				<option value="">Choose customer type</option>
-				<option value="<?php echo $dong['customer_type']?>"
-				
-				>Dân dụng</option>
-				<option value="<?php echo $dong['customer_type']?>"
-				
-				>Kinh doanh</option>
-				<option value="<?php echo $dong['customer_type']?>"
-			
-				>Sản xuất</option>
-			</select>
 		</p>
 		
 		<p>Start date
