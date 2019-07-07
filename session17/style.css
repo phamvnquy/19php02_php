@@ -1,0 +1,20 @@
+form {
+	height: 350px;
+	width: 200px;
+	border: 1px solid red;
+	margin: 0 auto;
+	
+}
+h1 {
+	text-align: center;
+}
+p {
+	text-align: center;
+
+}
+table {
+	margin:auto; 
+}
+tr td {
+	border: 1px solid green;
+}
