@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 07, 2019 at 09:54 AM
+-- Generation Time: Jul 07, 2019 at 10:09 AM
 -- Server version: 10.1.35-MariaDB
 -- PHP Version: 7.2.9
 
@@ -31,7 +31,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `news` (
   `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `describe` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `images` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `images` varchar(12) COLLATE utf8mb4_unicode_ci NOT NULL,
   `date_s` date NOT NULL,
   `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -41,8 +41,7 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`title`, `describe`, `images`, `date_s`, `id`) VALUES
-('1111', '111', '111', '2019-07-29', 5),
-('q1', '1', 'a', '2019-07-02', 6);
+('bong da', 'chung ke c1', 'abc.jpg', '2019-07-01', 7);
 
 --
 -- Indexes for dumped tables
@@ -62,7 +61,7 @@ ALTER TABLE `news`
 -- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
