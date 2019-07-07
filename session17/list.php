@@ -5,12 +5,13 @@
 	$listUser = mysqli_query($connect, $sql);
 	?>
 
-	<table style="border: 1px solid red">
+	<table>
 		<tr>
 			<td>title</td>
 			<td>describe</td>
 			<td>images</td>
 			<td>date</td>
+			<td colspan="2">action</td>
 		</tr>
 	
 <?php
