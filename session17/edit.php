@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="style.css">
 <?php
 require_once 'connect.php';
 if (isset($_POST['edit'])) {
@@ -28,7 +29,7 @@ if (isset($_POST['edit'])) {
 			<input type="text" name="describe" value="<?php echo $dong['describe']?>">
 		</p>
 		
-		<p>date
+		<p>date <br>
 			<input type="date" name="date" value="<?php echo $dong['date_s']?>">
 		</p>
 	

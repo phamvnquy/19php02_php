@@ -1,7 +1,6 @@
 form {
 	height: 350px;
 	width: 200px;
-	border: 1px solid red;
 	margin: 0 auto;
 	
 }
@@ -12,9 +11,10 @@ p {
 	text-align: center;
 
 }
-table {
-	margin:auto; 
+table, th, td{
+    border:1px solid red;
+   
 }
-tr td {
-	border: 1px solid green;
+table{
+    border-collapse:collapse;
 }
