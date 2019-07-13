@@ -1,0 +1,51 @@
+* {
+	margin: 0 auto;
+	padding: 0 auto;
+}
+body {
+	font-family: arial;
+	font-size: 30px;
+	background: #ada;
+}
+h1 {
+	text-align: center;
+	
+	margin-bottom: 20px;
+}
+form {
+	border: 1px solid #ada;
+	width: 480px;
+	background: #ddd;
+}
+form p {
+	margin:10px 0px 10px 10px;
+
+}
+form input {
+	width: 450px;
+}
+form textarea {
+	width: 450px;
+	margin-top: 10px;
+}
+img {
+	width: 100px;
+}
+table, tr, td, th{
+	border:1px solid green;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 10px;
+}
+thead {
+	background-color: #DDDDDD;
+}
+tbody tr:nth-child(odd){
+	background-color: #ada;
+}
+#id {
+	color: red;
+}
